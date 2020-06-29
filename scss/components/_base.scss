@@ -1,0 +1,232 @@
+* {
+  $box-sizing: border-box;
+  
+  box-sizing: $box-sizing;
+}
+*:last-child {
+  $margin-bottom: 0;
+  
+  margin-bottom: $margin-bottom;
+}
+
+$font-family-html: "Segoe WP N";
+$font-size-html: 14px;
+$font-weight-html: 500;
+$line-height-html: 1.5;
+$background-color-html: #ffffff;
+$color-html: black;
+
+html {
+  font-family: $font-family-html;
+  font-size: $font-size-html;
+  font-weight: $font-weight-html;
+  line-height: $line-height-html;
+  background-color: $background-color-html;
+  color: $color-html;
+}
+
+$position-wrapper: relative;
+$overflow-wrapper: hidden;
+
+.wrapper {
+  position: $position-wrapper;
+  overflow: $overflow-wrapper;
+}
+
+$max-width-container: 1000px;
+$box-sizing-container: content-box;
+$padding-container: 0 16px;
+$margin-container: 0 auto;
+
+.container {
+  max-width: $max-width-container;
+  box-sizing: $box-sizing-container;
+  padding: $padding-container;
+  margin: $margin-container;
+}
+
+$color-a: #3c3c3c;
+$text-decoration-a: none;
+$text-decoration-a: underline;
+
+a {
+  color: $color-a;
+  text-decoration: $text-decoration-a;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+$width-img: 100%;
+$height-img: auto;
+$display-img: block;
+$object-fit-img: cover;
+
+img {
+  width: $width-img;
+  height: $height-img;
+  display: $display-img;
+  object-fit: $object-fit-img;
+}
+
+$margin-figure: 0;
+
+figure {
+  margin: $margin-figure;
+}
+
+$display-logo: inline-block;
+$max-width-logo: 140px;
+
+.logo {
+  display: $display-logo;
+  max-width: $max-width-logo;
+}
+
+p,
+ul,
+ol {
+  $margin: 0 0 16px 0;
+  
+  margin: $margin;
+}
+
+* + p,
+* + ul,
+* + ol {
+  $margin-top: 16px;
+  
+  margin-top: $margin-top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  $margin: 0 0 0.67em 0;
+  
+  margin: $margin;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  $margin-top: 0.67em;
+  
+  margin-top: $margin-top;
+}
+
+$color-forked-title: black;
+$font-size-forked-title: 18px;
+$font-weight-forked-title: bold;
+
+.forked-class-title {
+  color: $color-forked-title;
+  font-size: $font-size-forked-title;
+  font-weight: $font-weight-forked-title;
+}
+
+$display-fork-flex: flex;
+$align-items-fork-flex: center;
+$justify-content-fork-flex: center;
+
+.class-flex-forked-title {
+  display: $display-fork-flex;
+  align-items: $align-items-fork-flex;
+  justify-content: $justify-content-fork-flex;
+}
+
+.forked-class-text {
+  $color: green;
+  $font-size: 14px;
+  $border-left: 1px solid red;
+  $padding-left: 30px;
+    
+    color: $color;
+    font-size: $font-size;
+    border-left: $border-left;
+    padding-left: $padding-left;
+  }
+
+.form-class-title {
+  $text-align: center;
+  $font-weight: bold;
+    
+  text-align: $text-align;
+  font-weight: $font-weight;
+}
+
+$height-footer: 100px;
+$display-footer: flex;
+
+.footer {
+  background-color: black;
+  height: $height-footer;
+}
+
+.footer-flex-class {
+  $justify-content: space-between;
+  $align-items: center;
+  
+  display: $display-footer;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  height: $height-footer;
+}
+
+.footer-text-class {
+  $color: white;
+  $margin: 0;
+  
+  color: $color;
+  margin: $margin;
+}
+
+.footer-text-class span {
+  $font-weight: bold;
+  
+  font-weight: $font-weight;
+}
+
+.footer-class-text {
+  $flex-direction: column;
+  
+  display: $display-footer;
+  flex-direction: $flex-direction;
+}
+
+.icon-class {
+  $max-width: 40px;
+  $display: flex;
+  
+  max-width: $max-width;
+  display: $display;
+}
+
+.icon-class-picture {
+  $padding: 5px;
+  $margin: 15px;
+  
+  padding: $padding;
+  margin: $margin;
+}
+
+.icon-class-loup {
+  $max-width: 20px;
+  $margin-left: 10px;
+  
+  max-width: $max-width;
+  margin-left: $margin-left;
+}
+
+.class-logo {
+  $margin: 14px 0;
+  
+  margin: $margin;
+}

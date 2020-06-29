@@ -1,0 +1,33 @@
+$position-hero: relative; 
+$height-hero: 500px;
+$display-hero: flex;
+$flex-direction-hero: column;
+$justify-content-hero: center;
+
+$font-size-title: 26px;
+$color: white;
+$margin: 0;
+$font-size-subtitle: 16px;
+$padding-subtitle: 15px 0;
+
+.hero {
+  position: $position-hero;
+  height: $height-hero;
+  display: $display-hero;
+  flex-direction: $flex-direction-hero;
+  justify-content: $justify-content-hero;
+  
+  &-title {
+    font-size: $font-size-title;
+    color: $color;
+    margin: $margin;
+  }
+  
+  &-subtitle {
+    font-size: $font-size-subtitle;
+    color: $color;
+    margin: $margin;
+    padding: $padding-subtitle;
+  }
+}
+

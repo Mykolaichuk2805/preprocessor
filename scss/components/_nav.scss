@@ -1,0 +1,46 @@
+$display-nav: flex;
+$align-items-nav: center;
+$margin-nav: 20px -10px;
+$position-nav: relative;
+
+$color-item: black;
+$font-size-item: 18px;
+$padding-item: 0 10px;
+$font-weight-item: bold;
+$color-hover: red;
+
+$position-line: absolute;
+$bottom-line: -35px;
+$width-line: 40px;
+$height-line: 2px;
+$background-color-line: red;
+
+.nav {
+  display: $display-nav;
+  align-items: $align-items-nav;
+  margin: $margin-nav;
+  position: $position-nav;
+  
+  &-item {
+    color: $color-item;
+    font-size: $font-size-item;
+    padding: $padding-item;
+    font-weight: $font-weight-item;
+  }
+  
+  &-item:hover {
+    color: $color-hover;
+  }
+}
+
+.is-active {
+  color: $color-hover;
+}
+
+.line-class {
+  position: $position-line;
+  bottom: $bottom-line;
+  width: $width-line;
+  height: $height-line;
+  background-color: $background-color-line;
+}

@@ -1,0 +1,26 @@
+$display-row: flex;
+$flex-wrap-row: wrap;
+$justify-content-row: center;
+$margin-row: -10px;
+$padding-row: 10px;
+
+
+.row {
+  display: $display-row;
+  flex-wrap: $flex-wrap-row;
+  margin: $margin-row;
+  justify-content: $justify-content-row;
+  
+  & > .column {
+    padding: $padding-row;
+  }
+  
+  &-large {
+    margin: $margin-row;
+  }
+  
+  &-large > .column {
+    padding: $padding-row;
+  }
+  
+}

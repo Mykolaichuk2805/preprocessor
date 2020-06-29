@@ -1,0 +1,86 @@
+$size-text: 14px;
+$margin: 0;
+$border: 0;
+$display: inline-block;
+$padding: 8px 0 8px 14px;
+
+
+@mixin button-var($color, $background-color, $font-size, $width: '400', $height) {
+  @if($width == 150px) {
+    color: $color;
+    background-color: $background-color;
+    font-size: $font-size;
+    height: $height;
+    margin-top: 15px;
+    width: $width;
+    &:hover {
+      color: blue;
+      background-color: #ffffff;
+      border-color: blue;
+    }
+  } @else if ($width == 320px) {
+    color: $color;
+    background-color: $background-color;
+    font-size: $font-size;
+    height: $height;
+        width: $width;
+    &:hover {
+      color: blue;
+      background-color: #ffffff;
+      border-color: blue;
+    }
+  } @else if ($width == 400px) {
+    color: $color;
+    background-color: $background-color;
+    font-size: $font-size;
+    height: $height;
+    width: $width;
+    &:hover {
+      color: blue;
+      background-color: #ffffff;
+      border-color: blue;
+    }
+  }
+}
+
+.button {
+  display: $display;
+  margin: $margin;
+  border: 1px solid transparent;
+  border-radius: $border;
+  font-size: $size-text;
+  line-height: inherit;
+  font-family: inherit;
+  padding: $padding;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  
+  &-primary {
+    @include button-var(#ffffff, red, 15px, 150px, 40px)
+  }
+
+  &-secondary {
+    @include button-var(#ffffff, red, 15px, 320px, 40px)
+  }
+
+  &-three {
+    @include button-var(#ffffff, red, 15px, 400px, 40px)
+  }
+  
+}
+
+
+

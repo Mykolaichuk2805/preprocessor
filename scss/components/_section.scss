@@ -1,0 +1,67 @@
+$background-color-header: white;
+$padding-header: 22px 0 15px 15px;
+$display-header: flex;
+$flex-direction-header: row;
+$justify-content-header: space-between;
+
+$padding-top-cart: 45px;
+
+$position-sb: absolute;
+$z-index-sb: -1;
+$top-sb: 0;
+$bottom-sb: 0;
+$left-sb: 0;
+$right-sb: 0;
+$margin-sb: 0;
+$height-sb: 100%;
+
+$height-forked: 200px;
+$display-forked: flex;
+$align-items-forked: center;
+$justify-content-forked: center;
+
+$display-form: flex;
+$padding-form: 80px 0;
+
+.section-header {
+  background-color: $background-color-header;
+  padding: $padding-header;
+  
+  &-flex {
+    display: $display-header;
+    flex-direction: $flex-direction-header;
+    justify-content: $justify-content-header;
+  }
+}
+
+
+.section-cart {
+  padding-top: $padding-top-cart;
+}
+
+.section-background {
+  position: $position-sb;
+  z-index: $z-index-sb;
+  top: $top-sb;
+  bottom: $bottom-sb;
+  left: $left-sb;
+  right: $right-sb;
+  margin: $margin-sb;
+  
+  & > img {
+    height: $height-sb;
+  }
+}
+
+.section-forked {
+  height: $height-forked;
+  display: $display-forked;
+  align-items: $align-items-forked;
+  justify-content: $justify-content-forked;
+}
+
+
+.section-form {
+display: $display-form;
+padding: $padding-form;
+}
